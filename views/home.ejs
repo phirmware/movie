@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      body{
+         background: coral;
+         color: black;
+      }
+      h1{
+          text-align: center;
+          text-decoration: underline;
+      }
+      input{
+          border: none;
+          padding: 15px;
+          border-radius: 5px;
+          width: 35%;
+          font-size: 25px;
+          outline: none;
+      }
+      .submit{
+          background: lightblue;
+          width: 120px;
+      }
+      p{
+          color: darkred;
+          font-weight: bold;
+          font-size: 20px;
+      }
+      
+    </style>
+</head>
+
+<body>
+    <h1>MOVIE SEARCH </h1>
+    <p>Search for your favourite movies</p>
+    <form action="/result" method="GET">
+        <input type="text" name="form">
+        <input class="submit"  type="submit">
+    </form>
+</body>
+
+</html>

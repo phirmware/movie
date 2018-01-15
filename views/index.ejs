@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+     body{
+         background: lightcyan;
+     }
+     img{
+         height: 150px;
+         width: 150px;
+     }
+     li{
+         background-color: aqua;
+         margin-bottom: 4px;
+         border: none;
+         border-radius: 5px;
+         list-style: none;
+         font-size: 30px;
+         font-family: Rockwell;
+     }
+     h1{
+         text-align: center;
+     }
+     input{
+        font-family: "Rockwell Extra Bold";
+        padding: 20px;
+        text-align: center;
+        font-size: 30px;
+     }
+    </style>
+</head>
+<body>
+        <h1>SEARCH RESULTS</h1>
+        <% for(var i = 0; i< 10 ;i++){ %>
+              <li><img src=" <%= data["Search"][i]["Poster"]%>  " alt="image: "> <%= data["Search"][i]["Title"]%>  
+                <%= data["Search"][i]["Year"]%> <%= data["Search"][i]["Type"]%></li>
+           <% }%>
+            <h2>SEARH AGAIN</h2>
+           <form action="/result" method="GET">
+            <input type="text" name="form">
+            <input class="submit"  type="submit">
+        </form> 
+</body>
+</html>
+
+ 
